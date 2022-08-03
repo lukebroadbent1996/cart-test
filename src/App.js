@@ -1,13 +1,17 @@
+import React from 'react'
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 
 import Home from './pages'
+import CheckoutPage from './pages/checkout';
 
 function App() {
   return (
-    <Router>
-      <Home />
-    </Router>
+   
+      <Routes>
+        <Route path='/' element={<Home/>} exact />
+        <Route path='/checkout' element={<CheckoutPage/>} exact/>
+      </Routes>
   );
 }
 

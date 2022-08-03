@@ -9,11 +9,11 @@ const Info = (props) => {
     
   
     return (
-    <main className='block col-2'>
+    <main className='left-block container col-2'>
         <h1>Giveaway</h1>
         <div className='row'>
           {products.map((product)=>(
-            <Item key={product.id} product={product} onClick={() => onAdd(product)}></Item>
+            <Item key={product.id} product={product} onAdd={onAdd}></Item>
           ))}
         </div>
     </main>

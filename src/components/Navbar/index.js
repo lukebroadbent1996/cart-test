@@ -9,6 +9,10 @@ import {
     MobileIcon, 
     NavMenu 
 } from './NavbarElements'
+import {Link} from 'react-router-dom'
+import '../../App.css'
+
+
 
 const Navbar = ({toggle}) => {
   return (
@@ -23,19 +27,15 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                             <NavItem>
-                                <NavLinks to='home'>
+                                <NavLinks to='home'><Link className='links' to='/'>
                                     Home
+                                    </Link>
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='basket'>
-                                    Basket
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='checkout'>
+                                <NavLinks to="checkout"><Link className='links' to='/checkout'>
                                     Checkout
-                                </NavLinks>
+                                    </Link></NavLinks>
                             </NavItem>
                 </NavMenu>
             </NavbarContainer>

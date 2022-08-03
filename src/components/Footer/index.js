@@ -17,6 +17,7 @@ import {
 const Footer = () => {
   return (
     <>
+    <hr/>
     <FooterContainer>
         <FooterWrap>
             <FooterLinksContainer>

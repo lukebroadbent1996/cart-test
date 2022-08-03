@@ -3,4 +3,48 @@
   margin: 0;
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
+
+}
+.country{
+  margin-bottom: 32px;
+}
+
+.alert, .overlay{
+  width: 15rem;
+  height: 15rem;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rem;
+  margin-left: 4rem;
+  
+
+
+}
+
+
+.alert-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: white;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+.closeAlert{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+.links {
+  text-decoration: none;
+  color: inherit;
 }

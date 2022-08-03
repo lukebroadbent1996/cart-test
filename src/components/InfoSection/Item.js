@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-// import {Button} from '../ButtonElements'
+import {Button} from '../ButtonElements'
 
 const Item = (props) => {
     const {product, onAdd} = props
@@ -10,7 +10,7 @@ const Item = (props) => {
         <h3>{product.name}</h3>
         <div>£{product.price}</div>
         <div>
-            <button onClick={() => onAdd(product)}>Add to cart</button>
+            <Button onClick={() => onAdd(product)}>Add to cart</Button>
         </div>
     </div>
   )
